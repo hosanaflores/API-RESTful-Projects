@@ -18,6 +18,7 @@ body {
   --sb-size: 7px;
   scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
   display: flex;
+  flex-direction: column;
 }
 
 body::-webkit-scrollbar {
@@ -83,19 +84,20 @@ body::-webkit-scrollbar-thumb {
     margin-left: 250px;
     padding: 20px;
     background-color: #2b2b2b;
-    width: 100%;
+    width: calc(100% - 250px);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+    height: calc(100% - 100px);
 }
 
 .card {
     background-color: #fff764;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    width: 300px;
+    width: 325px;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -122,5 +124,91 @@ body::-webkit-scrollbar-thumb {
 
 .card p {
     color: #2b2b2b;
+    width: 55%;
+    justify-content: left;
+    display: flex;
+    align-items: center;
+}
+
+.card span {
+    text-align: left;
+    width: 45%;
     text-align: center;
+}
+
+.card .container div {
+    display: flex;
+    gap: 5px;
+}
+
+.buttons {
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.button-edit, .button-delete {
+    width: 30%;
+    height: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: #2b2b2b solid 1px;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: 0.3s all;
+    color: #2b2b2b;
+}
+
+.button-delete {
+    background-color: rgb(255, 108, 108);
+
+}
+
+.button-edit {
+    background-color: rgb(130, 130, 255);
+}
+
+.button-edit:hover {
+    background-color: rgb(57, 57, 255);
+    color: whitesmoke;
+}
+
+.button-delete:hover {
+    background-color: rgb(233, 60, 60);
+    color: whitesmoke;
+}
+
+.pagination-controls {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    gap: 10px;
+    background-color: #2b2b2b;
+}
+
+.pagination-controls button {
+    width: 8%;
+    height: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #fff764;
+    font-weight: bold;
+    font-family: 15px;
+}
+
+.pagination-controls button:hover {
+    background-color: #fff429;
+}
+
+.pagination-controls button:disabled {
+    background-color: #8a8a8a;
+    color: #2b2b2b;
+}
+
+#currentPage {
+    color: #fff764;
 }

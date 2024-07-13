@@ -33,18 +33,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 .content {
-    background-image: url("../images/pexels-k-howard-94471-2220292.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+  background-image: url("../images/pexels-k-howard-94471-2220292.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .login-container {
-  background-color: rgba( 230, 230, 230, 0.95) ;
+  background-color: rgba(230, 230, 230, 0.95);
   width: 25%;
   height: 80%;
   display: flex;
@@ -62,21 +63,21 @@ body::-webkit-scrollbar-thumb {
 }
 
 .input {
-    display: flex;
-    flex-direction: column;
-    font-weight: bold;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  gap: 10px;
 }
 
 input {
-    border: 0;
-    border-bottom: 1px solid #2b2b2b;
-    background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #2b2b2b;
+  background-color: transparent;
 }
 
 input:focus {
-    outline: none;
-    border-color: black;
+  outline: none;
+  border-color: black;
 }
 
 button {
@@ -167,16 +168,16 @@ iframe {
 }
 
 .sign-up {
-    text-decoration: none;
-    color: #2b2b2b;
-    font-weight: bold;
+  text-decoration: none;
+  color: #2b2b2b;
+  font-weight: bold;
 }
 
-.sign-up:hover{
-    color: #a64bf4;
-    font-weight: bold;
+.sign-up:hover {
+  color: #a64bf4;
+  font-weight: bold;
 }
 
 .logo-form {
-    width: 50px;
+  width: 50px;
 }

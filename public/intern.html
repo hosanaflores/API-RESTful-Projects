@@ -11,6 +11,8 @@
       media="screen"
     />
     <link rel="icon" href="./images/parking_1.png" type="image/x-icon" />
+
+    <script src="./js/intern.js"></script>
   </head>
   <body>
     <div class="sidebar">
@@ -22,71 +24,13 @@
       <a href="index.html">Sair</a>
     </div>
 
-    <div class="content">
-      <div class="card">
-        <div class="img">
-          <img src="./images/parking_1.png" alt="Imagem do card" />
-        </div>
-        <div class="container">
-          <h4><b>Título do Card</b></h4>
-          <p>
-            Descrição do card. Esta é uma breve descrição sobre o conteúdo do
-            card.
-          </p>
-        </div>
-      </div>
+    <div class="content" id="content"></div>
 
-      <div class="card">
-        <div class="img">
-          <img src="./images/parking_1.png" alt="Imagem do card" />
-        </div>
-        <div class="container">
-          <h4><b>Título do Card</b></h4>
-          <p>
-            Descrição do card. Esta é uma breve descrição sobre o conteúdo do
-            card.
-          </p>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="img">
-          <img src="./images/parking_1.png" alt="Imagem do card" />
-        </div>
-        <div class="container">
-          <h4><b>Título do Card</b></h4>
-          <p>
-            Descrição do card. Esta é uma breve descrição sobre o conteúdo do
-            card.
-          </p>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="img">
-          <img src="./images/parking_1.png" alt="Imagem do card" />
-        </div>
-        <div class="container">
-          <h4><b>Título do Card</b></h4>
-          <p>
-            Descrição do card. Esta é uma breve descrição sobre o conteúdo do
-            card.
-          </p>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="img">
-          <img src="./images/parking_1.png" alt="Imagem do card" />
-        </div>
-        <div class="container">
-          <h4><b>Título do Card</b></h4>
-          <p>
-            Descrição do card. Esta é uma breve descrição sobre o conteúdo do
-            card.
-          </p>
-        </div>
-      </div>
+    <div class="pagination-controls">
+      <button id="prevPageBtn" onclick="prevPage()">Anterior</button>
+      <span id="currentPage"></span>
+      <button id="nextPageBtn" onclick="nextPage()">Próxima</button>
     </div>
+
   </body>
 </html>

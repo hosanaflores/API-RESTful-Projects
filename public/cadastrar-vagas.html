@@ -7,6 +7,11 @@
 
     <link rel="stylesheet" type="text/css" href="./css/cadastrar-vagas.css" media="screen"/>
     <link rel="icon" href="./images/parking_1.png" type="image/x-icon" />
+
+    <script src="./js/cadastrar-vagas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
   </head>
 
   <body>
@@ -22,30 +27,51 @@
     <div class="content">
       <div class="form-container">
         <h2>Formulário de Registro</h2>
-        <form action="#" method="post">
+        <div class="form">
           <div class="input">
-            <label for="firstname">Nome</label>
-            <input type="text" id="firstname" name="firstname" required />
+            <label for="parkingSpotNumber">Número da Vaga</label>
+            <input type="text" id="parkingSpotNumber" required maxlength="10"/>
           </div>
 
           <div class="input">
-            <label for="lastname">Sobrenome</label>
-            <input type="text" id="lastname" name="lastname" required />
+            <label for="licensePlateCar">Placa do Carro</label>
+            <input type="text" id="licensePlateCar" required maxlength="7"/>
           </div>
 
           <div class="input">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
+            <label for="brandCar">Marca do Carro</label>
+            <input type="text" id="brandCar" required maxlength="45"/>
           </div>
 
           <div class="input">
-            <label for="phone">Telefone</label>
-            <input type="tel" id="phone" name="phone" required />
+            <label for="modelCar">Modelo do Carro</label>
+            <input type="text" id="modelCar" required maxlength="45"/>
           </div>
-        </form>
-        <button type="submit">Enviar</button>
+
+          <div class="input">
+            <label for="colorCar">Cor do Carro</label>
+            <input type="text" id="colorCar" required maxlength="25"/>
+          </div>
+
+          <div class="input">
+            <label for="responsibleName">Nome do Responsável</label>
+            <input type="text" id="responsibleName" required />
+          </div>
+
+          <div class="input">
+            <label for="apartment">Apartamento</label>
+            <input type="text" id="apartment" required maxlength="10"/>
+          </div>
+
+          <div class="input">
+            <label for="block">Bloco / Torre</label>
+            <input type="text" id="block" required maxlength="3"/>
+          </div>
+
+        </div>
+        <button class="button-signup" onclick="cadastrar()">Cadastrar</button>
       </div>
     </div>
-    
+
   </body>
 </html>
